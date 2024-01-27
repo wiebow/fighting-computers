@@ -1,5 +1,11 @@
+<%*
+let qcFileName = await tp.system.prompt("Post Title")
+titleName = qcFileName
+await tp.file.rename(titleName)
+await tp.file.move("/content/" + titleName);
+-%>
 ---
-title: "<% tp.file.title %>"
+title: "<% titleName %>"
 draft: true
 tags:
   - 
