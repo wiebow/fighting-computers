@@ -3,7 +3,7 @@ title: Welcome
 ---
 
 
-![[mega65-cross-development.jpg|640x500]]
+![[mega65-cross-development.jpg]]
 
 Welcome to this website.
 

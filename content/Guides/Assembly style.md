@@ -8,11 +8,7 @@ tags:
 
 This post explains how I style 6502 assembly language and it will also document the most common patterns.
 
-## Source-code layout
-
-### Lines
-
-* a line is max 80 characters wide.
+## Layout
 
 ### Instructions
 
@@ -21,7 +17,7 @@ This post explains how I style 6502 assembly language and it will also document 
 
 ### Labels
 
-* labels do not override the instruction space.
+* labels do not override the instruction space, max length is 14.
 * labels are on the same line as the first instruction.
 
 ### Comments
@@ -29,11 +25,10 @@ This post explains how I style 6502 assembly language and it will also document 
 * comments explaining a block of code are positioned at the beginning of the line.
 * comments explaining an instruction are positioned after the instruction
 
-
-This results in the following style:
+This combined results in the following style:
 
 ```asm6502
-// this is a codeblock explaining
+// this is a comment explaining
 // the following code block in a general way.
 
 				lda #01
@@ -57,10 +52,35 @@ string:			.text "HELLO WORLD"
 
 
 
+### Subroutines
+
+* must explain:
+	* **function**: one or two words naming the function
+	* **input**: which registers must be set, and what do they contain?
+	* **output**: which register is set with what return information?
+	* **destroys**: which registers are destroyed when running this routine?
+	* **calls**: which other routines are called from this one?
+	* **description**: more in-depth explanation of the function.
+
+Example:
+
+```asm6502
+// ***************************************
+// * FUNCTION: Initialize Interrupts
+// * INPUT: rasterline to trigger interrupt in .A
+// * OUTPUT: none
+// * CALLS: none
+// * DESTROYS: .X, .Y
+// * DESCRIPTION: sets up a raster interrupt at passed line
+
+```
+
+
+
 
 ## Common patterns
 
-The following items are translations from higher-level language patterns to low-level machine code. It's a helpful guide to maintain code similarity.
+The following items are translations from higher-level language patterns to low-level machine code. It's a helpful guide to maintain code similarity. `test`.
 
 ### If-then-else
 
