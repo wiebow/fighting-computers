@@ -1,5 +1,6 @@
 ---
 title: Assembly style
+description: A guide to styling source code to achieve a consistent quality
 draft: false
 tags:
   - assembly
@@ -50,13 +51,14 @@ In addition, standard patterns translated to assembly can be found in [[Patterns
 
 ## Subroutines
 
-* must explain:
-	* **function**: one or two words naming the function
-	* **input**: which registers must be set, and what do they contain?
-	* **output**: which register is set with what return information?
-	* **destroys**: which registers are destroyed when running this routine?
-	* **calls**: which other routines are called from this one?
-	* **description**: more in-depth explanation of the function.
+Must explain:
+
+ * ***function**: one or two words naming the function
+ * **input**: which registers must be set, and what do they contain?
+ * **output**: which register is set with what return information?
+ * **destroys**: which registers are destroyed when running this routine?
+ * **calls**: which other routines are called from this one?
+ * **description**: more in-depth explanation of the function.
 
 >[!Example]
 >```asm6502

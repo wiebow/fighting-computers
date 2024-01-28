@@ -1,5 +1,6 @@
 ---
 title: Koala Paint picture ripping
+description: An explanation about multi-colour bitmaps.
 draft: false
 tags:
   - graphics

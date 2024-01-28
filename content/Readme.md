@@ -1,6 +1,6 @@
 ---
 title: Read Me
-description: About the author
+description: About the author.
 tags:
 ---
 

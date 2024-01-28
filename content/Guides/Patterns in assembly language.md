@@ -1,5 +1,6 @@
 ---
 title: Patterns in assembly language
+description: Modern patterns translated to old fashioned assembly language.
 draft: false
 tags:
   - assembly
