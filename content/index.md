@@ -1,19 +1,22 @@
 ---
 title: Welcome
 ---
-Hi there! This website is a repository (or *digital garden*) of articles and guides about using 8-bit computers in the present age.
+>[!todo]
+>Bear with me as I am writing and moving content to this site. Over the years I've posted about 8-bit computers on my [Google Blogger](https://devdef.blogspot.com/) website. That content will be moved to this site in the coming time, at a rate of when-i-have-energy-and-time.
+
+Hi there! This website is a repository (or *digital garden*) of articles, projects and guides about using 8-bit computers in the present age. Thank you for being here. You can check out the [[Readme]] page for more about me, and my projects. For questions or feedback, you can find me on [Mastodon](https://oldbytes.space/@wiebow) and on the MEGA65 [Discord](https://discord.com/invite/5DNvESf).
 
 The title *"Fighting Computers"* comes from a quote I've read several years ago. The sub text was : computers were once invented to make life easier. Over the years, we've diverted from that path and made things more complicated, and what we once thought was beneficial turned out to be destructive and negative. This site is about going back to the computers of yesteryear to program them and use them just for the joy of simpler computing.
 
-The main focus of this digital garden is the [Commodore](https://en.wikipedia.org/wiki/Commodore_International) line of products and the recently released [Mega65](https://mega65.org/) machine, which is a re-creation of the never released Commodore 65, with bugfixes and more advanced features.
+## Navigation
 
-![[mega65_close.jpg]]
-*The MEGA 65*
+In the navigation bar on the left, you can browse the **projects** (series of articles about the same subject), **shorts** (single articles) and **guides** (how-to's about various subjects).
+The **graph view** on the right can be used to select a `#tag` to see all posts with that tag, or to browse the site content.
 
-Over the years I've posted about about 8-bit computers on my google Blogger website. That content will be moved to this site in the coming time.
+Here are some links to pages and lists to get started:
 
-Thank you for being here. You can check out the [[content/Readme|Readme]] page for more about me, and my projects. For questions or feedback, you can find me on [Mastodon](https://oldbytes.space/@wiebow) and on the MEGA65 [Discord](https://discord.com/invite/5DNvESf).
+* [[MEGA 65 Intro]]
+* [[Commodore 64 Intro]]
+* [[Commodore 128 Intro]]
 
-![[mega65-cross-development.jpg]]
-
-This site is created using Quartz and my local Obsidian vault about retro computing. Quartz creates a static website from this vault, and in this way I am in total control over my content, and moving this site and all its content to another hosting service, if needed, should be trivial.
+This site is created using [Quartz](https://quartz.jzhao.xyz/) and my local [Obsidian](https://obsidian.md) vault about retro computing. Quartz creates a static website from this vault, and in this way I am in total control over my content, and moving this site and all its content to another hosting service, if needed, should be trivial.

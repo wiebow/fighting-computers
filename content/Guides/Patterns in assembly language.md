@@ -10,9 +10,9 @@ The following items are translations from higher-level language patterns to low-
 
 More patterns will be added in the future.
 
-# Logic
+## Logic
 
-## If-then-else
+### If-then-else
 
 `A = 10 : IF A = 15 THEN ... ELSE ...`
 
@@ -29,6 +29,6 @@ ifdone:         ...         # rest of program
 
 
 
-# Math
+## Math
 
-
+...

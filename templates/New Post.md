@@ -6,6 +6,7 @@ await tp.file.move("/content/" + titleName);
 -%>
 ---
 title: "<% titleName %>"
+description:
 draft: true
 tags:
   - 
