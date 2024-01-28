@@ -19,10 +19,10 @@ This article will document the retrieval of one picture.
 ## The setup
 
 We will be using VICE as this makes life so much easier. To view the koala files on PC, we use [Droid64](https://droid64.sourceforge.net/). It's a java based, multi-platform D64 file editor, but it also can show koala files! Really handy. It hasn't been updated for ages, but the program works just fine for my needs.
-  
+
 We start with looking at this [demo on csdb](http://csdb.dk/release/?id=36209). It was made by the [Supersonics](https://draft.blogger.com/blog/post/edit/2955047293687286184/176038653623719182#) and it contains a picture I've made for them using the [Impossible Mission 2](https://draft.blogger.com/blog/post/edit/2955047293687286184/176038653623719182#) advert:
 
-![[content/images/36209.png|600-200]]
+![[36209.png|600-200]]
 *The Mission Sonic demo by The Supersonics*
   
 So how to rip it? First we need to know how Koala Painter on the Commodore 64 works. It uses *multi-colour bitmap* mode. By looking at the demo startup code, we should be able to deduce where in the Commodore 64 memory the data for the image resides. After starting the demo and going to the 3rd part, I use `CTRL-H` to go into the VICE monitor.
@@ -146,7 +146,7 @@ So let's write down where we need the data to go:
   
 I can tell you now that using this method gives the wrong results:  
 
-![[content/images/koala3.png|500-200]]
+![[koala3.png|500-200]]
 *Messed up first try*
 
 It looks like the colour data is shifted to the right, and it appears to be two positions. Bitmap data also does not look right. I got the suspicion that the 2 byte offset at the beginning was causing issues. Getting rid of the two bytes at the beginning results in this new table:
@@ -166,7 +166,7 @@ l "3.colour" 0 8328
 
 The background colour information is located at the end of the file and we need light grey, so closing the monitor we type `POKE 34576,15` and we hit `ENTER`. Back into the monitor, we save the complete file to disk by using `s "koala" 0 6000 8712`. Using Droid64, we view this file:
 
-![[content/images/87.impossible.mission2.png|500-200]]
+![[87.impossible.mission2.png|500-200]]
 
 Success!!!!  
 
@@ -174,12 +174,12 @@ Success!!!!
 
 I hope you liked this little hacker-y post. As a bonus for reading this all the way to the end, here are some other newly discovered 8 bit pixels:  
 
-![[content/images/87.jarre.oxygene.png|500-200]]
+![[87.jarre.oxygene.png|500-200]]
 *Jean Michel Jarre, I think from the Oxygene LP back cover*
 
-![[content/images/87.super.mario.bros.png|500-200]]
+![[87.super.mario.bros.png|500-200]]
 *8 bit heroes we all know*
 
-![[content/images/87.thing.on.a.spring.png|500-200]]
+![[87.thing.on.a.spring.png|500-200]]
 
 *4x5 multi colour character set :)*
