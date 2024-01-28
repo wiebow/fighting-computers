@@ -6,9 +6,8 @@ tags:
   - guide
 ---
 
-This post explains how I style 6502 assembly language and it will also document the most common patterns.
-
-Standard patterns translated to assembly can be found in [[[6502 assembly language patterns]].
+This post explains how I style 6502 or 45gs02 assembly language.
+In addition, standard patterns translated to assembly can be found in [[[6502 assembly language patterns]].
 
 ## Layout
 
@@ -52,7 +51,7 @@ string:			.text "HELLO WORLD"
 				.byte 13, 0
 ```
 
-### Subroutines
+## Subroutines
 
 * must explain:
 	* **function**: one or two words naming the function
