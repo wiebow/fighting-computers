@@ -8,6 +8,8 @@ tags:
 
 This post explains how I style 6502 assembly language and it will also document the most common patterns.
 
+Standard patterns translated to assembly can be found in [[[6502 assembly language patterns]].
+
 ## Layout
 
 ### Instructions
@@ -25,7 +27,7 @@ This post explains how I style 6502 assembly language and it will also document 
 * comments explaining a block of code are positioned at the beginning of the line.
 * comments explaining an instruction are positioned after the instruction
 
-This combined results in the following style:
+Example:
 
 ```asm6502
 // this is a comment explaining
@@ -50,8 +52,6 @@ string:			.text "HELLO WORLD"
 				.byte 13, 0
 ```
 
-
-
 ### Subroutines
 
 * must explain:
@@ -74,28 +74,5 @@ Example:
 // * DESCRIPTION: sets up a raster interrupt at passed line
 
 ```
-
-
-
-
-## Common patterns
-
-The following items are translations from higher-level language patterns to low-level machine code. It's a helpful guide to maintain code similarity. `test`.
-
-### If-then-else
-
-```asm6502
-				lda #10
-				cmp #15
-				bne else
-				# if code
-				jmp ifdone
-else:   # else code
-
-ifdone: # rest of program
-```
-
-
-
 
 
