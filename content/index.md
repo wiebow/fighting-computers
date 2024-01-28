@@ -17,9 +17,7 @@ In the navigation bar on the left, you can browse the **projects** (series of ar
 The *Graph View* on the right can be used to select a `#tag` to see all posts with that tag, or to browse the site content.
 
 >[!Tip]
->Click on the little icon in the top-right of the Graph View to see a full map of the site.
->
->You can also go to [[https://fightingcomputers.nl/tags/]] and see all the used tags.
+>Click on the little icon in the top-right of the Graph View to see a full connected map of the content. You can also go to [tags](https://fightingcomputers.nl/tags/) and see all the used tags on this site.
 
 Here are some links to pages and lists to get started:
 

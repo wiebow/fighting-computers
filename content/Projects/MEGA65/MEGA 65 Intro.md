@@ -11,3 +11,8 @@ A big focus of this site is the [Commodore](https://en.wikipedia.org/wiki/Commod
 ![[mega65_close.jpg]]
 *The MEGA 65. Just look at it!*
 
+Here it is, running on a nice DELL monitor:
+
+![[mega65.jpg]]
+*The MEGA65, connected to a DELL 17 inch TFT monitor, using IMDH*
+
