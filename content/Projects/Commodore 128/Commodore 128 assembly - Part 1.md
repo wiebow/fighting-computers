@@ -101,7 +101,8 @@ One of the first things to tackle when using the C128 is the use of the MMU. Esp
 Check out this memory map overview. We will get back to it later: 
 
 ![[Screenshot from 2018-03-17 14-17-34.png]]
-  
+*The Commodore 128 memory map. Fun.*
+
 This can be quite confusing, so I created a macro which will make selecting the proper bank configuration easier, as the values as used in the  `BANK` command can be used, and some custom configuration when I do so choose to add them:  
 
 ```

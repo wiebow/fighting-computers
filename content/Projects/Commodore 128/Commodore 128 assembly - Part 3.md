@@ -83,7 +83,7 @@ Running this program on VICE results in this, as it emulates a 64K model:
 ![[Screenshot from 2018-03-31 12-05-31.png]]*An output of 1 means there is 64K available for the VDC chip.*
 
 >[!Note]
->Of course, when your result is a `0` it does not mean there's only 16K in your machine, only that the VCD is configured to use 16K modules. So there still might be 64K available. I have not found a way to check this, apart from trying to write something outside the 16K. :) 
+>When your result is a `0` it does not mean there's only 16K in your machine, only that the VDC is configured to use 16K modules. So there still might be 64K available. I have not found a way to check this, apart from trying to write something outside the 16K. :) 
   
 Writing to the VDC RAM takes two steps:  
 
@@ -175,8 +175,7 @@ Attributes can be enabled or disabled (this is a global setting, allowing you to
 	rts  
 ```
 
-This will be the result:  
-
+This will be the result: 
   ![[Peek 2018-03-31 09-40.gif]]
 *Garbled attributes on a text of multiple 'A' characters.*
 ## Character Definitions

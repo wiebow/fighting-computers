@@ -40,7 +40,8 @@ Also before we continue, a definition of terms:
 Take a look at this memory map (you can access it [here on google drive](https://docs.google.com/spreadsheets/d/1bQ2t2D6PtcjfYYrcoL2B6U9I5FbdCmtlbhEYC0r2NgA/edit?usp=sharing)), and then lets go through this, one area at a time.  
 
 ![[Screenshot from 2018-03-17 14-17-34.png]]
-  
+*The infamous Commodore 128 memory map*
+
 When we look at the **RAM0** and **VICII Banks** columns, we can see the C128 is much the same as the C64. There is a bigger BASIC ROM though, and some areas we know from the C64 have been moved (start of BASIC RAM, location of BASIC variables, screen editor). When we introduce the **RAM1** column and the **Common** areas it starts to become more complicated as there are more combinations to be taken care off.
   
 The bottom of **RAM1** is used by BASIC to store variables. The rest is free to use as needed.
@@ -139,21 +140,22 @@ LDA $FF06
 AND #$FC
 ORA #$02
 STA $FF06
-
-  
+```
 
 Also, we can choose to make the top of memory common, the bottom (default) or both. In total we can have 32K of common RAM. This is done by using the following macro:
 
-  
+```asm6502
 .macro SetCommonEnabled(option) {  
-lda MMURCR  
-and #%11110011  // clear bits 2 and 3  
-ora #option*4  
-sta MMURCR  
-}  
-  
+	lda MMURCR  
+	and #%11110011  // clear bits 2 and 3  
+	ora #option*4  
+	sta MMURCR  
+}
+```
+
 Calling SetCommonEnabled(1) generates:  
-  
+
+```
 LDA $FF06  
 AND #$F3  
 ORA #$04  
@@ -172,10 +174,10 @@ As you can see in the memory map above, the VIC can be pointed to 4 blocks of RA
 
 ```asm6502
 .macro SetVICBank (bank) {  
-lda $dd00  
-and #%11111100  
-ora #3-bank  
-sta $dd00  
+	lda $dd00  
+	and #%11111100  
+	ora #3-bank  
+	sta $dd00  
 }
 ```
 
@@ -194,10 +196,10 @@ Within this 16K block of RAM, we can change the offsets to the character set dat
 
 ```
 .macro SetCharacterOffset (offset) {  
-lda $d018  
-and #%11110001  // clear the 3 offset control bits  
-ora #offset  
-sta $d018  
+	lda $d018  
+	and #%11110001  // clear the 3 offset control bits  
+	ora #offset  
+	sta $d018  
 }  
 ```
 
@@ -216,12 +218,12 @@ The offset voor screen memory (screen matrix) can be changed in 1K steps. The ma
 
 ```
 .macro SetMatrixOffset (offset) {  
-lda $d018  
-and #001111  // clear the 4 offset control bits  
-.if(offset > 0) {  
-ora #offset*16  
-}  
-sta $d018  
+	lda $d018  
+	and #001111  // clear the 4 offset control bits  
+	.if(offset > 0) {  
+		ora #offset*16  
+	}  
+	sta $d018  
 }
 ```
 
@@ -243,8 +245,8 @@ So far, nothing different from the C64. There is one new option though: you can 
 
 	lda MMURCR
 	and #%10111111  // clear bit 6
-.if(value==1) {
-	ora #%01111111  // enable bit 6
+	.if(value==1) {
+		ora #%01111111  // enable bit 6
 }
 	sta MMURCR
 }
