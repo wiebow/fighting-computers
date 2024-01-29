@@ -37,7 +37,7 @@ Also before we continue, a definition of terms:
 
 ## Memory Management
 
-Take a look at this memory map (you can access it [here on google drive](https://docs.google.com/spreadsheets/d/1bQ2t2D6PtcjfYYrcoL2B6U9I5FbdCmtlbhEYC0r2NgA/edit?usp=sharing)), and then lets go through this, one area at a time.  
+Take a look at this memory map, and then lets go through this one area at a time.  
 
 ![[Screenshot from 2018-03-17 14-17-34.png]]
 *The infamous Commodore 128 memory map*
@@ -100,7 +100,7 @@ LDA #$00
 STA $FF00  
 ```
 
-This will select RAM bank configuration 15 and enable I/O, Kernal and BASIC ROMs. The macro offers the possibility to add custom configurations (see option 99). There is also a configuration (12) that enables the internal function ROM (a free socket on the motherboard can be fitted with a custom ROM chip). I intent to test some ROMs that I have real soon.
+This will select RAM bank configuration 15 and enable I/O, Kernal and BASIC ROMs. The macro offers the possibility to add custom configurations (see option 99). There is also a configuration (12) that enables the internal function ROM (a free socket on the motherboard can be fitted with a custom ROM chip).
 
 In general, try to use RAM block 0 for program code, and RAM block 1 for data.
 
@@ -153,7 +153,7 @@ Also, we can choose to make the top of memory common, the bottom (default) or bo
 }
 ```
 
-Calling SetCommonEnabled(1) generates:  
+Calling `SetCommonEnabled(1)` generates:
 
 ```
 LDA $FF06  
@@ -190,8 +190,8 @@ Calling `SetVICBank(0)` creates:
  STA $DD00  
 ```
   
-Which will select VIC bank 0, which is the default. Are you tired of the word 'bank' yet?  
-  
+Which will select VIC bank 0, which is the default. Are you tired of the word *bank* yet?  
+
 Within this 16K block of RAM, we can change the offsets to the character set data and the screen display matrix (screen memory) inside that block.
 
 ```
@@ -242,7 +242,6 @@ So far, nothing different from the C64. There is one new option though: you can 
 
 ```
 .macro SetVICRAMBank(value) {
-
 	lda MMURCR
 	and #%10111111  // clear bit 6
 	.if(value==1) {
@@ -266,7 +265,6 @@ When planning a program for the C128, it's wise to think about the memory layout
   
 If the VIC configuration needs changing because of the fixed location of data, then selecting another 16K block or tuning the location of character data and screen data will help.
   
-This can now easily be done using a few macros that will generate the necessary code.  
-Getting this out of the way will make it easier to understand the machine and plan for new programs.
+This can now easily be done using a few macros that will generate the necessary code. Getting this out of the way will make it easier to understand the machine and plan for new programs.
   
 Next up is [[Commodore 128 assembly - Part 3]].

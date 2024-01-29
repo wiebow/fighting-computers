@@ -47,9 +47,7 @@ Here are the macros I've written for this:
 	bpl !-
 	sta VDCDAT
 }
-```
 
-```asm6502
 .macro ReadVDC() {
 	stx VDCADR
 !:  bit VDCADR
@@ -176,13 +174,14 @@ Attributes can be enabled or disabled (this is a global setting, allowing you to
 ```
 
 This will be the result: 
-  ![[Peek 2018-03-31 09-40.gif]]
+
+ ![[Peek 2018-03-31 09-40.gif]]
 *Garbled attributes on a text of multiple 'A' characters.*
 ## Character Definitions
   
-As on the VIC, the character definitions can be changed on the VDC. The definitions are located, by default, at `$2000-$3FFF` in VDC RAM and its config can be changed or read through register 28. As the VDC cannot access the character ROM at `$D000`, and because it has no character definition data by itself, the definitions are copied from ROM to VDC RAM when the C128 boots. As a VDC character is defined in a 8x16 grid some padding is added to the character data each 8 bytes.
+As on the VIC, the character definitions can be changed on the VDC. The definitions are located, by default, at `$2000-$3FFF` in VDC RAM and its config can be changed or read through register 28. As the VDC cannot access the character ROM at `$D000`, and because it has no character definition data by itself, the definitions are copied from ROM to VDC RAM when the C128 boots. As a VDC character is defined in a 8x16 grid, an 8 byte padding is added to each character data.
   
-This is done by a kernal routine called **DLCHR**. We could utilise this routine, but it has some hard coded values, so here's the macro I've made that steals this idea and makes it more flexible:
+This is done by a KERNAL routine called **DLCHR**. We could utilise this routine, but it has some hard coded values, so here's the macro I've made that steals this idea and makes it more flexible:
 
 ```asm6502
 .macro CopyDefinitionsToVDC (address, address_end) {  
@@ -265,7 +264,7 @@ lda #11         // vertical spacing of char to 12.
 jsr WRITE_VDC  
 ```
   
-This will result in:  
+This will result in: 
 
 ![[Screenshot from 2018-03-31 13-01-22.png]]
 *Adding spacing also makes a row longer, resulting in overlap*
@@ -321,7 +320,7 @@ DELAY:
 Resulting in:
 
 ![[Peek 2018-03-31 13-28.gif]]
-*Reducing how much vertically is drawn, we get a dissolve effect eventough the character definitions are not changed*
+*Reducing how much vertically is drawn, we get a dissolve effect even though the character definitions are not changed*
 
 ## Conclusion
 

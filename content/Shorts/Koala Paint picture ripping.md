@@ -21,7 +21,7 @@ This article will document the retrieval of one picture.
 
 We will be using VICE as this makes life so much easier. To view the koala files on PC, we use [Droid64](https://droid64.sourceforge.net/). It's a java based, multi-platform D64 file editor, but it also can show koala files! Really handy. It hasn't been updated for ages, but the program works just fine for my needs.
 
-We start with looking at this [demo on csdb](http://csdb.dk/release/?id=36209). It was made by the [Supersonics](https://draft.blogger.com/blog/post/edit/2955047293687286184/176038653623719182#) and it contains a picture I've made for them using the [Impossible Mission 2](https://draft.blogger.com/blog/post/edit/2955047293687286184/176038653623719182#) advert:
+We start with looking at this [demo on csdb](http://csdb.dk/release/?id=36209). It was made by the [Supersonics](https://csdb.dk/group/?id=2072) and it contains a picture I've made for them using the [Impossible Mission 2](https://en.wikipedia.org/wiki/Impossible_Mission_II) advert:
 
 ![[36209.png|600-200]]
 *The Mission Sonic demo by The Supersonics*
@@ -44,7 +44,7 @@ b504
 
 I find a list of possible locations.  Going through them I see this code at `$3000` onward:  
 
-```
+```asm6502 /$D011/ /$D016/
 .C:3000  A9 00       LDA #$00  
 .C:3002  20 DC 19    JSR $19DC  
 .C:3005  AD 02 DD    LDA $DD02  
@@ -80,7 +80,7 @@ I find a list of possible locations.  Going through them I see this code at `$
 
 Jackpot. Let's find out how the picture data is distributed. Demo coders sometimes mix up the layout of WHERE the data is kept. Sometimes this is done because of clashes with other code or perhaps a music file that uses the same space.  `$DD00` controls where the VIC II chip is looking for its 16K block of video RAM. Here are the lines that change that address:  
 
-```
+```asm6502 /$DD00/
 .C:300d  AD 00 DD    LDA $DD00  
 .C:3010  29 FC       AND #$FC  
 .C:3012  09 02       ORA #$02  
@@ -94,7 +94,7 @@ It appears that VIC bank 2 is selected. This means that the base of the 16K of V
 
 To find the bitmap and colour information we need to look at `$D018`. Here is the code that modifies that address:
 
-```
+```asm6502 /$D018/
 .C:301c  AD 18 D0    LDA $D018  
 .C:301f  29 0F       AND #$0F  
 .C:3021  09 10       ORA #$10  
@@ -119,15 +119,15 @@ We now know where the data is and how much there is:
 * Multi colour data: `$4400 - $4800`
 * Screen color: `$d800 - $dc00`
 
-We can easily save this with the VICE monitor:  
+We can easily save this with the VICE monitor by entering three commands:  
 
-```
-s "1.bitmap" 0 6000 7800  
-s "2.screen" 0 4400 4801  
-s "3.colour" 0 d800 dc00  
-```
+`s "1.bitmap" 0 6000 7800`
 
-Using 0 as a device will save the data to your PC drive. Handy!  
+`s "2.screen" 0 4400 4801`
+
+`s "3.colour" 0 d800 dc00`
+
+Using `0` as a device will save the data to your PC drive. Handy!  
   
 ## Putting it all together
 
@@ -159,11 +159,11 @@ It looks like the colour data is shifted to the right, and it appears to be two 
 
 We open VICE and enter the monitor and then we load the data back into the correct memory areas:
 
-```
-l "1.bitmap" 0 6000 
-l "2.screen" 0 7f40  
-l "3.colour" 0 8328  
-```
+`l "1.bitmap" 0 6000`
+
+`l "2.screen" 0 7f40`
+
+`l "3.colour" 0 8328`
 
 The background colour information is located at the end of the file and we need light grey, so closing the monitor we type `POKE 34576,15` and we hit `ENTER`. Back into the monitor, we save the complete file to disk by using `s "koala" 0 6000 8712`. Using Droid64, we view this file:
 

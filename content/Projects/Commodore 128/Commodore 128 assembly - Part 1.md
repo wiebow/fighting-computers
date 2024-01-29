@@ -129,7 +129,7 @@ This can be quite confusing, so I created a macro which will make selecting the 
 }
 ```
 
-So, adding SetBank(15) to my source code will enable the default bank configuration.
+So, adding `SetBank(15)` to my source code will enable the default bank configuration.
 
 ## First Test
 
