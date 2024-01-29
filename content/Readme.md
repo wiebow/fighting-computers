@@ -1,8 +1,7 @@
 ---
 title: Read Me
 description: About the author.
-tags:
-  - siteinformation
+tags: []
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: Commodore 128 Introduction
-description: 
+description: A springboard for the C128 content
 draft: false
 tags:
   - commodore-128
