@@ -1,7 +1,8 @@
 ---
 title: Welcome
-description: The site description and introduction.
+description: An 8-bit retrocomputing site
 tags:
+  - index
 ---
 >[!todo]
 >Bear with me as I am writing and moving content to this site. Over the years I've posted about 8-bit computers on my [Google Blogger](https://devdef.blogspot.com/) website. That content will be moved to this site in the coming time, at a rate of *when-i-have-time-and-energy*.
