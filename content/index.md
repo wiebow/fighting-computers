@@ -13,7 +13,7 @@ Hello there! This website is a repository (or *digital garden*) of articles, pro
 The title *"Fighting Computers"* comes from a quote I've read several years ago. The sub-text was : *computers were once invented to make life easier*. Yet, over the years, computers got more and more complicated, and what we once thought was beneficial turned out to be destructive and negative. This site is about going back to the computers of yesteryear to program them and use them just for the joy of simpler computing.
 
 >[!todo]
->Bear with me as I am writing and moving content to this site. Over the years I've posted about 8-bit computers on my [Google Blogger](https://devdef.blogspot.com/) website. That content (and others) will be moved to this site in the coming time, at a rate of *when-i-have-time-and-energy*.
+>Bear with me as I am writing and moving content to this site. Over the years I've posted about 8-bit computers on my [Google Blogger](https://devdef.blogspot.com/) website. That content (and from other places) will be moved to this site, at a rate of *when-i-have-time-and-energy*.
 
 ## Navigation
 
@@ -27,8 +27,8 @@ The *Graph View* on the right can be used to select a `#tag` to see all posts wi
 Here are some links to pages and lists to get started:
 
 * [[MEGA 65 Intro]]
-* [[Commodore 64 Intro]]
-* [[Commodore 128 Intro]]
+* [[content/Projects/Commodore 64/Intro]]
+* [[content/Projects/Commodore 128/Intro]]
 
 ## Technical
 
