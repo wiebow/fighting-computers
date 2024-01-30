@@ -14,7 +14,8 @@ tags:
 ![[Screenshot from 2018-03-21 20-44-31.png]]
 *Still complicated? Let's get more into it*
 
-All the code and resource files in this post are available on my GitHub page, because it's fun to share.
+>[!Note]
+>All the code and resource files in this post are available on my GitHub page, because it's fun to share.
 
 Welcome to another part in this series. The first part is [[Commodore 128 assembly - Part 1]].
 
@@ -116,7 +117,7 @@ We will take a look at those subroutines in another part.
   
 If your program or data is too large to fit in the default common area, then its size can be changed. It can be 1, 4, 8 or 16K in size. The macro I created to change the size is this:
 
-```
+```asm6502
 .macro SetCommonRAM(amount) {  
 	lda MMURCR  
 	and #%11111100  // clear bits 0 and 1. this is also option 1  
@@ -155,7 +156,7 @@ Also, we can choose to make the top of memory common, the bottom (default) or bo
 
 Calling `SetCommonEnabled(1)` generates:
 
-```
+```asm6502
 LDA $FF06  
 AND #$F3  
 ORA #$04  
@@ -194,7 +195,7 @@ Which will select VIC bank 0, which is the default. Are you tired of the word *b
 
 Within this 16K block of RAM, we can change the offsets to the character set data and the screen display matrix (screen memory) inside that block.
 
-```
+```asm6502
 .macro SetCharacterOffset (offset) {  
 	lda $d018  
 	and #%11110001  // clear the 3 offset control bits  
@@ -216,7 +217,7 @@ This mean that the offset for the character data is 4K. If the VIC bank is locat
 
 The offset voor screen memory (screen matrix) can be changed in 1K steps. The macro I created for this is:
 
-```
+```asm6502
 .macro SetMatrixOffset (offset) {  
 	lda $d018  
 	and #001111  // clear the 4 offset control bits  
@@ -229,7 +230,7 @@ The offset voor screen memory (screen matrix) can be changed in 1K steps. The ma
 
 Using `SetMatrixOffset(1)` assembles to:
 
-```
+```asm6502
  LDA $D018  
  AND #$0F  
  ORA #$10  
@@ -240,7 +241,7 @@ Which will place the screen RAM at `$0000` +` $400` = `$0400`, which is, again,
 
 So far, nothing different from the C64. There is one new option though: you can tell the MMU that the VIC chip should use RAM block 1. Here's the macro to do that, and it accepts a 0 or a 1 as value:
 
-```
+```asm6502
 .macro SetVICRAMBank(value) {
 	lda MMURCR
 	and #%10111111  // clear bit 6

@@ -14,7 +14,8 @@ tags:
 ![[Screenshot from 2018-03-21 20-44-31.png]]
 *Getting more familiar? Excellent!*
 
-ll the code and resource files in this post are available on my GitHub page, because it's fun to share.
+>[!Note]
+>All the code and resource files in this post are available on my GitHub page, because it's fun to share.
 
 Welcome to part 3 of this series. We are going to look at the basic functions of the VDC, which enables 80 column support. It is foremost a chip designed to do nice stuff with text. It can do interlaced modes and bit-mapped graphics though, and we might take a look at that later on.
   

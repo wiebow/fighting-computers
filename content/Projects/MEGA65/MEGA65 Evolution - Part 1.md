@@ -107,4 +107,4 @@ Pfew. Some really nice improvements throughout the years on these CPU's. A lot i
 
 Also, not every feature coming from these older CPU's is updated or completed to use in the MEGA65 mode. Time will tell which are the preferred ways of making use of these features.
 
-The next post will dive into the evolution of the use of memory and its methods of access.  Read it here: [[MEGA65 - Evolution - Part 2]]. Thanks for reading, and please let me know of any errors, or suggestions for improvements!
+The next post will dive into the evolution of the use of memory and its methods of access.  Read it here: [[MEGA65 Evolution - Part 2]]. Thanks for reading, and please let me know of any errors, or suggestions for improvements!

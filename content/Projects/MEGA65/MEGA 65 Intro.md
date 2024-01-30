@@ -8,6 +8,9 @@ tags:
 
 A big focus of this site is the [Commodore](https://en.wikipedia.org/wiki/Commodore_International) line of products and the recently released [Mega65](https://mega65.org/) machine, which is a re-creation of the never released Commodore 65, with bug-fixes and advanced features.
 
+The MEGA65 official development blog by Paul Gardner-Stephen that has been around since the beginning is [here](https://c65gs.blogspot.com/).
+
+
 ![[mega65_close.jpg]]
 *The MEGA 65. Just look at it!*
 

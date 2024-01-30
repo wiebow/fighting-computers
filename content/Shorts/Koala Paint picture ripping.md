@@ -6,6 +6,7 @@ tags:
   - graphics
   - commodore-64
   - assembly
+  - pixel-art
 ---
 ## The Carelessness of youth
 
@@ -30,7 +31,7 @@ So how to rip it? First we need to know how Koala Painter on the Commodore 64 wo
 
 Multi-colour bitmap mode is set by setting two registers: `$D011` and `$D016`. So lets hunt for code that changes these registers. We can forget about the range from `$D000 - $FFFF`:
 
-```
+```asm6502
 (C:$30a8) hunt 0000 cfff d011  
 1018  
 3043  
@@ -150,7 +151,7 @@ I can tell you now that using this method gives the wrong results:
 ![[koala3.png|500-200]]
 *Messed up first try*
 
-It looks like the colour data is shifted to the right, and it appears to be two positions. Bitmap data also does not look right. I got the suspicion that the 2 byte offset at the beginning was causing issues. Getting rid of the two bytes at the beginning results in this new table:
+It looks like the colour data is shifted to the right, and it appears to be two positions. Bitmap data also does not look right. The 2 byte offset at the beginning is causing issues, because on a real machine the first two bytes are not stored into memory. Getting rid of the two bytes at the beginning results in this new table:
 
 * `6000 - 7f3f` - bitmap
 * `7f40 - 8327` - screen
@@ -182,5 +183,5 @@ I hope you liked this little hacker-y post. As a bonus for reading this all the 
 *8 bit heroes we all know*
 
 ![[87.thing.on.a.spring.png|500-200]]
-
 *4x5 multi colour character set :)*
+

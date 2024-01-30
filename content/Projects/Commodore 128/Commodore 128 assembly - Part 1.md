@@ -13,7 +13,8 @@ tags:
 ![[Screenshot from 2018-03-21 20-44-31.png]]
 *Looks complicated? Read on!*
 
-All the code and resource files in this post are available on my GitHub page, because it's fun to share.
+>[!Note]
+>All the code and resource files in this post are available on my GitHub page, because it's fun to share.
 
 I want to delve more into the Commodore 128. It's such a nice system. Some of the new and advanced features are not easy to program though. So I decided to create a system, a framework if you will, of re-usable parts once I had figured out the basics.
 
@@ -54,7 +55,7 @@ Then, some handy setup macros. For example:
 
 Isn't that nice? Entering `Go80()` beats remembering and typing in that code. I can now also use this macro `DoEscapeCode('X')` which will also switch between 80 and 40 column mode. This is the macro code for that:  
 
-```
+```asm6502
 .macro DoEscapeCode (code) {  
 	lda #code  
 	jsr JESCAPE  
@@ -67,7 +68,7 @@ And it allows easy access to the other escape codes as well.
 
 These are one-off calls. They accept parameters and will therefore generate specific code for specific situations, mostly during setup, and they can be added into the code when required. Some code is better added as subroutines though, for example: writing to a VDC register:  
 
-```
+```asm6502
 .macro WriteVDC () {  
 	stx VDCADR  
 !:  bit VDCADR  
@@ -78,7 +79,7 @@ These are one-off calls. They accept parameters and will therefore generate spec
 
 This can be added as a subroutine to object code like so:  
 
-```
+```asm6502
 WRITE_VDC:  
 :WriteVDC()  
 rts
@@ -105,7 +106,7 @@ Check out this memory map overview. We will get back to it later:
 
 This can be quite confusing, so I created a macro which will make selecting the proper bank configuration easier, as the values as used in the  `BANK` command can be used, and some custom configuration when I do so choose to add them:  
 
-```
+```asm6502
 .macro SetBank(id) {  
 .if(id==0) {
 	lda #111111  // no roms, RAM 0  

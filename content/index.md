@@ -1,15 +1,19 @@
 ---
-title: Welcome
+title: Fighting Computers
 description: An 8-bit retrocomputing site
 tags:
   - index
 ---
+# Welcome!
+
+![[og-image.png]]
+
+Hello there! This website is a repository (or *digital garden*) of articles, projects and guides about using 8-bit computers in the present age. Thank you for being here. You can check out the [[Readme]] page for more about me, and my other projects. For questions or feedback, you can find [me](https://oldbytes.space/@wiebow) on Mastodon and on the MEGA65 [Discord](https://discord.com/invite/5DNvESf).
+
+The title *"Fighting Computers"* comes from a quote I've read several years ago. The sub-text was : *computers were once invented to make life easier*. Yet, over the years, computers got more and more complicated, and what we once thought was beneficial turned out to be destructive and negative. This site is about going back to the computers of yesteryear to program them and use them just for the joy of simpler computing.
+
 >[!todo]
->Bear with me as I am writing and moving content to this site. Over the years I've posted about 8-bit computers on my [Google Blogger](https://devdef.blogspot.com/) website. That content will be moved to this site in the coming time, at a rate of *when-i-have-time-and-energy*.
-
-Hi there! This website is a repository (or *digital garden*) of articles, projects and guides about using 8-bit computers in the present age. Thank you for being here. You can check out the [[Readme]] page for more about me, and my projects. For questions or feedback, you can find [me](https://oldbytes.space/@wiebow) on Mastodon and on the MEGA65 [Discord](https://discord.com/invite/5DNvESf).
-
-The title *"Fighting Computers"* comes from a quote I've read several years ago. The sub text was : computers were once invented to make life easier. Over the years, we've diverted from that path and made things more complicated, and what we once thought was beneficial turned out to be destructive and negative. This site is about going back to the computers of yesteryear to program them and use them just for the joy of simpler computing.
+>Bear with me as I am writing and moving content to this site. Over the years I've posted about 8-bit computers on my [Google Blogger](https://devdef.blogspot.com/) website. That content (and others) will be moved to this site in the coming time, at a rate of *when-i-have-time-and-energy*.
 
 ## Navigation
 

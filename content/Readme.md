@@ -10,7 +10,7 @@ tags: []
 
 Wiebo has been involved with microcomputers since the early 80’s explosion. Primarily a Commodore kid, he is still engaged with 8 bits at a time.
 
-A history of his C64 scene releases can be found on [csdb](https://csdb.dk/scener/?id=14141).
+A history of his C64 scene releases can be found on [csdb](https://csdb.dk/scener/?id=14141).  His pixel-art from the C64 and Amiga days can be seen on the [Retro Gallery](https://tomseditor.com/gallery/browse?platform=&format=&author=wdw&year=&sort=&group=&nsfw=&lang=en).
 
 His retro computer/programming and gaming blog is called [DevDef](https://devdef.blogspot.com/) while his shared code is on [GitHub](https://github.com/wiebow).
 

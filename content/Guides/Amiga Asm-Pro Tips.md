@@ -42,7 +42,7 @@ This will NOT work. Do it like this:
 
 ![[asm4.png]]
 
-This may be old news to you, but I spent 45 minutes trying to solve this little issue, as the assembler does not report an error, but this copper list will not work though.  
+This may be old news to you, but I spent 45 minutes trying to solve this little issue, as the assembler does not report an error, but this copper list will not work.  
 
 ## Debugging
   
@@ -59,4 +59,6 @@ If you can call that easy. I hope I will not have to use it to debug stuff...  T
 
 One handy assemble option is **optimize**. You can use the command `ao` and the assembler will look at your branches: if a branch offset fits in a byte (meaning the branch is less than 128 memory locations, it will change your instruction to a `.b` variant, so `bne` will become `bne.b` and so on. This will save two bytes and two cycles, per branch. Yay!  
 
-OK, that's it for now. I am currently following the [Scoopex tutorials on YouTube](https://www.youtube.com/channel/UC1lfCoAuwbQ22H-KoImEygg). They are a great resource, and after reading some 680000 books they are a great introduction to Amiga hardware programming. Fascinating. Highly recommended!
+OK, that's it for now. I am currently following the [Scoopex tutorials on YouTube](https://www.youtube.com/channel/UC1lfCoAuwbQ22H-KoImEygg). They are a great resource, and after reading some 68000 books they are a great introduction to Amiga hardware programming. Fascinating. Highly recommended!
+
+For more information about 68000 assembly language, you can read [[68000 and the 6502 CPU]].

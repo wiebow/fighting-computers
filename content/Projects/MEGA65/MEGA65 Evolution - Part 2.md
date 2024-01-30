@@ -10,7 +10,7 @@ tags:
 ---
 ## Introduction  
 
-You can find the other post in this series here: [[MEGA65 - Evolution - Part 1]]
+You can find the other post in this series here: [[MEGA65 Evolution - Part 1]]
 
 Welcome to the second part of this series which is all about memory. The MEGA65 does include a lot of RAM and can address more RAM than 8 bits can carry. How did we get here? How does it work?
 
