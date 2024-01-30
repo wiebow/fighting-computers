@@ -26,11 +26,9 @@ So, for each block we must be able to define which frame numbers belong to which
 
 The definitions for block 1 are beneath that. Here they are for completions sake:  
 
-![[08.PNG|250]]
+![[08.PNG|225]]
 
-So, moving forward in the animation frames rotates the block clockwise, and moving back results in a counter clockwise rotation.
-  
-Also, I changed the frame definition to a larger size, because I realised that the long Tetris block is 4 characters high. Rotating it means we need a 4x4 frame size.  
+So, moving forward in the animation frames rotates the block clockwise, and moving back results in a counter clockwise rotation. Also, I changed the frame definition to a larger size, because I realised that the long Tetris block is 4 characters high. Rotating it means we need a 4x4 frame size.  
   
 I added a few memory location definitions to store information about the current block (the block the player is currently controlling) so this information is readily available when playing the game:
 
@@ -70,7 +68,7 @@ It's a biggie, I was just about able to get a screen grab of that in one go! :) 
   
 We also added the pause and reset key, but those will be activated later on. Also later, we will add joystick support, which shouldn't be too hard once we have the keyboard and reactions to that in place.  Hmm. How to turn left and right with one joystick button though? A challenge!!
   
-I really like the KickAssembler possibility to have reusable labels... It was a nightmare on the C64 to think up new labels for simple branch operations and it resulted in weird names which make no sense after 25 years! I should have thought of that then.
+I really like the Kick Assembler possibility to have reusable labels... It was a nightmare on the C64 to think up new labels for simple branch operations and it resulted in weird names which make no sense after 25 years! I should have thought of that then.
   
 One thing that stumped me in Kick Assembler was the fact that I had to use a `#` before the key definitions in the code (`#LEFT`, `#RIGHT`, etc) . This is because I defined them not as hexadecimal but as decimal numbers. Not adding the `#` does not result in compile errors but weird behaviour.  
   

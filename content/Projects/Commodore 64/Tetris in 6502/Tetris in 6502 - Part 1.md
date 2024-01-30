@@ -54,13 +54,13 @@ Now, how to get this on the screen? This is a two stage process. We will put the
 
 The screen memory spans several memory pages (`$04` to `$07`) so the page boundary check is there to up the hi byte of the address if we cross a page boundary. The check uses the carry bit to see if the lo byte has rolled over from `$ff` to `$00`. The `screenMemory` address is a zero page address defined as:
 
-![[content/images/tetris/00.PNG]]
+![[00.PNG]]
 
 This zero page address now points to a screen memory position where we will print the block. We will be using zero page indexed with y addressing to get to this. Next step is the print function:
 
 ![[03.PNG]]
 
-This code also introduces a extremely powerful and dangerous machine code programming technique: self modifying code. The first statements in this subroutine alter the code at the label `printLoop`:  the `LDA` function is modified to point to the block data address, so we can later read this without fiddling with x and y registers. If we had used zero paged indexed with y addressing for reading the block data as well as the screen memory address, we would have to juggle the Y register around while reading and printing which would just be messy and unnecessary complex.
+This code also introduces a extremely powerful and dangerous machine code programming technique: *self modifying code*. The first statements in this subroutine alter the code at the label `printLoop:`  the `LDA` function is modified to point to the block data address, so we can later read this without fiddling with x and y registers. If we had used zero paged indexed with y addressing for reading the block data as well as the screen memory address, we would have to juggle the Y register around while reading and printing which would just be messy and unnecessary complex.
 
 We do not print spaces as we could over write parts of other blocks already on the screen.
 

@@ -47,7 +47,7 @@ So, only the map is exported, per character, and as raw data. You can see the ma
 
 ![[22.PNG]]
 
-I added a `0` to the end of the data, as a marker for our print route. So let's create the print subroutine. We want to center the play screen on the 40 column display, and as the play screen is 21 characters in width, we cannot do this! The horror. A graphics designer nightmare. I blame Nintendo actually :)  So let's compromise by starting at position 10. Here is what I came up with:  
+I added a `0` to the end of the data, as a marker for our print route. So let's create the print subroutine. We want to center the play screen on the 40 column display, and as the play screen is 21 characters in width, we cannot do this! The *horror*. A graphics designer nightmare. I blame Nintendo actually :)  So let's compromise by starting at position 10. Here is what I came up with:  
 
 ![[24.PNG]]
 
@@ -56,6 +56,7 @@ This code will read data, and write it into the screen memory. It checks for the
 To print this, we need an empty screen and preferably some nice colours, and as I liked the CharPad default colour, I used those in a small sub routine:
 
 ![[25.PNG]]
+
 The comment mentions the sprite pointers. These are located at `$07f8-$07ff`, and as this loop is clearing those as well I thought it deserved a mention. We may or may not use sprites, so let's keep this in mind.
   
 Let's add a little setup code:
