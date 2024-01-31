@@ -7,6 +7,7 @@ tags:
   - asm6502
   - kick-assembler
   - tetris
+  - series
 ---
  
 ## What am I getting myself into?

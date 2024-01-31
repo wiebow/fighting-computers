@@ -6,6 +6,7 @@ tags:
   - commodore-64
   - commodore-128
   - mega-65
+  - series
 ---
 ## Introduction
 

@@ -17,19 +17,23 @@ The title *"Fighting Computers"* comes from a quote I've read several years ago.
 
 ## Navigation
 
-In the navigation bar on the left, you can browse the **projects** (series of articles about the same subject), **shorts** (single articles) and **guides** (how-to's about various subjects).
+In the navigation bar on the left, you can browse the *Projects* (series of articles about the same subject), *Shorts* (single articles) and *Guides* (how-to's about various subjects).  On the right you see the most recent posts.
 
-The *Graph View* on the right can be used to select a `#tag` to see all posts with that tag, or to browse the site content.
+### Popular Subjects
 
->[!Tip]
->Click on the little icon in the top-right of the Graph View to see a full connected map of the content. You can also go to [tags](https://fightingcomputers.nl/tags/) and see all the used tags on this site.
+Use this table of popular `#tags` that will link to  a page showing all the posts with that tag.
 
-Here are some links to pages and lists to get started:
+| Systems | Languages | Subjects | Post Types |
+| ---- | ---- | ---- | ---- |
+| [MEGA 65](tags/mega-65) | [6502 Assembly](tags/asm6502) | [Tetris](tags/tetris) | [Guides](tags/guide) |
+| [Commodore 64](tags/commodore-64) | [45gs02 Assembly](tags/asm45gs02) | [Graphics](tags/graphics) | [Series](tags/series) |
+| [Commodore 128](tags/commodore-128) | [68000 Assembly](tags/asm68000) | [Pixel Art](tags/pixel-art) | [Shorts](tags/shorts) |
+| [Amiga](tags/amiga) | [BASIC](tags/basic) |  |  |
+|  |  |  |  |
 
-* [[MEGA 65 Intro]]
-* [[content/Projects/Commodore 64/Intro]]
-* [[content/Projects/Commodore 128/Intro]]
 
 ## Technical
 
 This site is created using [Quartz](https://quartz.jzhao.xyz/) and my local [Obsidian](https://obsidian.md) vault about retro computing. Quartz creates a static website from this vault, and in this way I am in total control over my content, and moving this site and all its content to another hosting service, if needed, should be trivial.
+
+

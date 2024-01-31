@@ -7,6 +7,7 @@ tags:
   - commodore-64
   - assembly
   - pixel-art
+  - shorts
 ---
 ## The Carelessness of youth
 

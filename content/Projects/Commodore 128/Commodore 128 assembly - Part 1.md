@@ -7,6 +7,7 @@ tags:
   - asm6502
   - commodore-128
   - assembly
+  - series
 ---
 ## Introduction
 

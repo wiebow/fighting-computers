@@ -7,6 +7,7 @@ tags:
   - kick-assembler
   - asm6502
   - tetris
+  - graphics
 ---
 Hi there and welcome to the third part, let's get going!  
   
