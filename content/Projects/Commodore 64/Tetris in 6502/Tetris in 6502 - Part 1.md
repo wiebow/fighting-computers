@@ -21,9 +21,10 @@ I still have the source code to this game and it's been really fun to read it, a
   
 The plan is to re-use the graphics and music and sound effects from the old 1992 version, but totally reprogram the game itself.
   
-I am not going to explain 6502 programming from the ground up in full in these series, and I will assume you know a bit already about assembly and the Commodore. I will document how I will try to recreate the Tetris game for the Commodore 64. A lot will become clear as more and more code is added, and I will try to be really detailed in the source comments.
-  
-If you do have questions about the code, do not hesitate to ask!!  
+I am not going to explain 6502 programming from the ground up in full in these series, and I will assume you know a bit already about assembly and the Commodore. I will document how I will try to recreate the Tetris game for the Commodore 64. A lot will become clear as more and more code is added, and I will try to be really detailed in the source comments.  
+
+> [!Tip]
+> If you do have questions about the code, do not hesitate to ask!!  
 
 This code should run on any 6502 based machine, provided the machine specific features (screen memory, audio and video chip addresses etc) are modified to suit the destination system.
 
@@ -76,8 +77,8 @@ The `DownOneRow` function simply modifies the zero page pointer one row down:
 I've put this in a separate subroutine because I have a feeling that this bit of code will be used a few more times. We are nearly there, and with a little test program we can print a block on the screen:
 
 ![[05.PNG]]
-  
-This test will print a block on the screen as position 10,5. The printed block will be the block with index 0:
+
+This test should print a block on the screen as position 10,5. The printed block will be the block with index 0:
 
 ![[06.PNG|420]]
 
