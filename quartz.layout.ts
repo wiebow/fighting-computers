@@ -33,7 +33,7 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   right: [
     Component.Graph(),
-    Component.RecentNotes({ title: "Recent Posts", limit: 5, linkToMore: "tags"}),
+    Component.RecentNotes({ title: "Recent Posts", limit: 3, linkToMore: "tags"}),
     Component.Backlinks(),
   ],
 }

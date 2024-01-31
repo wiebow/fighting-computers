@@ -13,7 +13,8 @@ Hello there! This website is a repository (or *digital garden*) of articles, pro
 ## Posts
 
 In the navigation bar on the left, you can browse the *Projects* (series of articles about the same subject), *Shorts* (single articles) and *Guides* (how-to's about various subjects).  On the right you see the most recent posts.
-Use this table of popular `#tags` that will link to  a page showing all the posts with that tag.
+
+Use this table of popular `#tags` that will link to  a page showing all the posts with that tag, or click [here](tags) to see a list of all the tags on the site.
 
 | Systems | Languages | Subjects | Post Types |
 | ---- | ---- | ---- | ---- |
