@@ -29,11 +29,11 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(Component.TableOfContents()),
   ],
   right: [
-//  Component.Graph(),
+    Component.Graph(),
     Component.RecentNotes({ title: "Recent Posts", limit: 5, linkToMore: "tags"}),
-    Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
 }
