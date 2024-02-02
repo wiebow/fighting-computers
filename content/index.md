@@ -1,14 +1,15 @@
 ---
 title: Fighting Computers
 description: An 8-bit retrocomputing site
-tags:
-  - index
+tags: []
 ---
 ## Welcome!
 
 ![[og-image.png|400]]
 
-Hello there! This website is a repository (or *digital garden*) of articles, projects and guides about using 8-bit computers in the present age. Thank you for being here. You can check out the [Read Me](/Readme) page for more about me, and my other projects. For questions or feedback, you can find me on [Mastodon](https://oldbytes.space/@wiebow) and on the MEGA65 [Discord](https://discord.com/invite/5DNvESf).
+Hello there! This website is a repository (or *digital garden*) of articles, projects and guides about using 8-bit computers in the present age. I will also post about other things from my working life, but all content will be IT related and technical in nature.
+
+You can check out the [Read Me](/Readme) page for more about me, and my other projects. For questions or feedback, you can find me on [Mastodon](https://oldbytes.space/@wiebow) and on the MEGA65 [Discord](https://discord.com/invite/5DNvESf). Thank you for being here.
 
 ## Posts
 
