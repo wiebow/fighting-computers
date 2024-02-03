@@ -7,7 +7,7 @@ tags:
   - commodore-64
   - assembly
   - pixel-art
-  - shorts
+  - guide
 date: 2024-01-29
 ---
 ## The Carelessness of youth

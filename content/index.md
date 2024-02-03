@@ -20,7 +20,7 @@ Use this table of popular `#tags` that will link to  a page showing all the post
 | ---- | ---- | ---- | ---- |
 | [MEGA 65](tags/mega-65) | [6502 Assembly](tags/asm6502) | [Tetris](tags/tetris) | [Guides](tags/guide) |
 | [Commodore 64](tags/commodore-64) | [45gs02 Assembly](tags/asm45gs02) | [Graphics](tags/graphics) | [Series](tags/series) |
-| [Commodore 128](tags/commodore-128) | [68000 Assembly](tags/asm68000) | [Pixel Art](tags/pixel-art) | [Shorts](tags/shorts) |
+| [Commodore 128](tags/commodore-128) | [68000 Assembly](tags/asm68000) | [Pixel Art](tags/pixel-art) |  |
 | [Amiga](tags/amiga) | [BASIC](tags/basic) |  |  |
 |  |  |  |  |
 

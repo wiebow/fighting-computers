@@ -5,7 +5,7 @@ draft: false
 tags:
   - getting-things-done
   - zim-wiki
-  - shorts
+  - guide
 date: 2024-02-01
 ---
 ## Introduction 

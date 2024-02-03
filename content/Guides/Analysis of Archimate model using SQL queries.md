@@ -5,7 +5,7 @@ draft: false
 tags:
   - sql
   - archimate-tool
-  - shorts
+  - guide
 date: 2024-02-02
 ---
 ## Introduction
