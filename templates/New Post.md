@@ -5,7 +5,7 @@ await tp.file.rename(titleName)
 await tp.file.move("/content/" + titleName);
 -%>
 ---
-title: "<% titleName %>"
+title: "change me"
 description:
 draft: true
 date:
