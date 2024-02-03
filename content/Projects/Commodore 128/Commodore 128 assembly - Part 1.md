@@ -8,6 +8,7 @@ tags:
   - commodore-128
   - assembly
   - series
+date: 2024-01-31
 ---
 ## Introduction
 

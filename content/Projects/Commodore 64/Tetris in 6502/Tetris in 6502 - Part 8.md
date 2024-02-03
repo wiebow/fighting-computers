@@ -7,6 +7,7 @@ tags:
   - kick-assembler
   - asm6502
   - tetris
+date: 2024-02-02
 ---
 Here we go with a new part in this series!  
   

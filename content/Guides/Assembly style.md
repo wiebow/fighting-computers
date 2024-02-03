@@ -5,6 +5,7 @@ draft: false
 tags:
   - assembly
   - guide
+date: 2024-01-27
 ---
 
 This post explains how I style 6502 or 45gs02 assembly language.

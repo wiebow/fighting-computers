@@ -7,6 +7,7 @@ tags:
   - kick-assembler
   - asm6502
   - tetris
+date: 2024-01-29
 ---
 Welcome to the 2nd part of this series of posts. Who knows where we'll end up? In the previous post we got to the point that we could select and print a block on the screen. 
 

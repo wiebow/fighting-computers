@@ -7,6 +7,7 @@ tags:
   - kick-assembler
   - asm6502
   - tetris
+date: 2024-02-02
 ---
 Welcome back! In this part of this ASM epic we will be adding joystick input.  We also will add the pause mode to the game.  This all adds to the overall game experience and accessibility.
 

@@ -8,6 +8,7 @@ tags:
   - commodore-128
   - kick-assembler
   - graphics
+date: 2024-01-31
 ---
 ## Introduction
 

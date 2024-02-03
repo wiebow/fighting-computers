@@ -7,6 +7,7 @@ tags:
   - kick-assembler
   - asm6502
   - tetris
+date: 2024-02-02
 ---
 Hi there! This 10th part of the series will talk about getting the main loop into shape, allowing for 'game modes'. This is needed because it will allow us to do more with the game: playing, showing game over message, entering names, doing the attract mode without creating one gigantic mess of a loop.  
   

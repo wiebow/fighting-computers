@@ -7,6 +7,7 @@ tags:
   - memory-management
   - commodore-64
   - commodore-128
+date: 2024-02-01
 ---
 ## Introduction  
 

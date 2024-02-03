@@ -7,6 +7,7 @@ tags:
   - kick-assembler
   - asm6502
   - tetris
+date: 2024-02-02
 ---
 Hi there! This post is all about fleshing out the Tetris experience so the game feels more complete. We are going to add the line count, play level and the showing of the next block to fall.  
 

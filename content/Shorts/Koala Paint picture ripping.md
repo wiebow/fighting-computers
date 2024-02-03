@@ -8,6 +8,7 @@ tags:
   - assembly
   - pixel-art
   - shorts
+date: 2024-01-29
 ---
 ## The Carelessness of youth
 

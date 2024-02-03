@@ -6,6 +6,7 @@ tags:
   - assembly
   - asm6502
   - "#asm45gs02"
+date: 2024-01-28
 ---
 The following items are translations from higher-level language patterns to low-level  assembly language. This can be used as a guide to maintain code standardisation.
 

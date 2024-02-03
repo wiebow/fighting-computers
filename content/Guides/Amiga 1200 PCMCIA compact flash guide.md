@@ -5,6 +5,7 @@ draft: false
 tags:
   - amiga
   - guide
+date: 2024-01-27
 ---
 ## Introduction
   

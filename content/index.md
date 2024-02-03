@@ -1,7 +1,8 @@
 ---
 title: Fighting Computers
 description: An 8-bit retrocomputing site
-tags: []
+tags: 
+date: 2024-01-27
 ---
 ![[og-image.png|400]]
 

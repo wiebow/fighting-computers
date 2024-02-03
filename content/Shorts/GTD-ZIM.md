@@ -6,6 +6,7 @@ tags:
   - getting-things-done
   - zim-wiki
   - shorts
+date: 2024-02-01
 ---
 ## Introduction 
 

@@ -7,6 +7,7 @@ tags:
   - kick-assembler
   - asm6502
   - tetris
+date: 2024-01-30
 ---
 So, here we are again with the fifth part of coding Tetris in 6502 machine code on the Commodore 64, because why not?  We nearly have a game going: blocks are falling, collision detection is happening and new blocks are spawned randomly. So far so good. To get the game really going we need line scanning and removal.
 

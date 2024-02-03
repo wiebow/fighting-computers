@@ -8,6 +8,7 @@ tags:
   - asm6502
   - tetris
   - graphics
+date: 2024-01-29
 ---
 Hi there and welcome to the third part, let's get going!  
   

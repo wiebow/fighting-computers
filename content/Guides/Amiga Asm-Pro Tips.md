@@ -7,6 +7,7 @@ tags:
   - asm68000
   - assembly
   - guide
+date: 2024-01-27
 ---
 ## Introduction
 

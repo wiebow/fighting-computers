@@ -8,6 +8,7 @@ tags:
   - kick-assembler
   - tetris
   - series
+date: 2024-01-29
 ---
  
 ## What am I getting myself into?

@@ -4,6 +4,7 @@ description: A springboard for the C64 content
 draft: false
 tags:
   - commodore-64
+date: 2024-01-27
 ---
 Everybody with a little bit of knowledge of the history of computing knows the Commodore 64. 
 

@@ -8,6 +8,7 @@ tags:
   - kick-assembler
   - assembly
   - memory-management
+date: 2024-01-31
 ---
 ## Introduction
 
