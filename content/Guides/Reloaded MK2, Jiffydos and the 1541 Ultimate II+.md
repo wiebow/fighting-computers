@@ -31,7 +31,7 @@ I use *Linux Mint*, with *Minicom*.  In order for xmodem file transfers over se
   
 Sending the file to the board takes a few seconds:
 
-![[content/images/reviews/jif1.png]]
+![[jif1.png]]
   
 
 > [!NOTE]
@@ -69,7 +69,7 @@ Make sure to use menu "W - Write settings" to save the settings. From now on, th
   
 Now, the C64 to be restarted, or the menu item "Z - Reinitialize memory and reload ROM images from flash" needs to be executed. After restarting, my C64 shows that Jiffydos is loaded:
 
-![[content/images/reviews/jif2.jpg]]
+![[jif2.jpg]]
 
 We can make selecting the kernal ROMs a bit easier though by changing the setting in the "K - Configure Keys (RESTORE and RESET/POWER)" menu. I changed the long press of the reset button to switch between custom image 1 and the default kernal ROM.  
 
@@ -93,15 +93,15 @@ Next, we need to set the 1541 Ultimate II+ to use the Jiffydos ROM for its 1541 
   
 This will open a menu, allowing you to use it as a drive ROM:
 
-![[content/images/reviews/jif3.jpg]]
+![[jif3.jpg]]
   
 Selecting the ROM tells you what to do next:  
 
-![[content/images/reviews/jif4.jpg]]
+![[jif4.jpg]]
   
 Lets do what we're told: lets change the drive A ROM to **Custom**. This is done by going into the settings menu `F2` and then selecting the **drive A settings** option:  
 
-![[content/images/reviews/jif5.jpg]]
+![[jif5.jpg]]
   
 Press `ENTER` and we're done.  
 
@@ -109,5 +109,5 @@ Press `ENTER` and we're done.
 
 We can now use Jiffydos in combination with the 1541 Ultimate II+. Really nice! Fastload without taking a cartridge slot, and handy shortcut commands when using diskettes:
 
-![[content/images/reviews/jif6.jpg]]
+![[jif6.jpg]]
 
