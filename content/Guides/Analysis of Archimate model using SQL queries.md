@@ -10,7 +10,7 @@ date: 2024-02-02
 ---
 ## Introduction
 
-Modeling can provide you with many benefits. Apart from a very specific visual view, a model can also be used for analysis. One of the most basic things I do is find stuff when asked a question, like “how many services do we run with this-or-that characteristic?”
+Modelling can provide you with many benefits. Apart from a very specific visual view, a model can also be used for analysis. One of the most basic things I do is find stuff when asked a question, like “how many services do we run with this-or-that characteristic?”
 
 The tool of choice is [Archi](https://www.archimatetool.com/), a fantastic open source project which allows you to create and view models using [Archimate](https://www.opengroup.org/archimate-forum/archimate-overview), an industry standard to model an enterprise. Making a model is one thing, but how can you use it for *analysis* to gain insight in the enterprise? 
 

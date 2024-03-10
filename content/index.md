@@ -16,13 +16,13 @@ In the navigation bar on the left, you can browse the *Projects* (series of arti
 
 Use this table of popular `#tags` that will link to  a page showing all the posts with that tag, or click [here](tags) to see a list of all the tags on the site.
 
-| Systems | Languages | Subjects | Post Types |
-| ---- | ---- | ---- | ---- |
-| [MEGA 65](tags/mega-65) | [6502 Assembly](tags/asm6502) | [Tetris](tags/tetris) | [Guides](tags/guide) |
-| [Commodore 64](tags/commodore-64) | [45gs02 Assembly](tags/asm45gs02) | [Graphics](tags/graphics) | [Series](tags/series) |
-| [Commodore 128](tags/commodore-128) | [68000 Assembly](tags/asm68000) | [Pixel Art](tags/pixel-art) |  |
-| [Amiga](tags/amiga) | [BASIC](tags/basic) |  |  |
-|  |  |  |  |
+| Systems                             | Languages                         | Subjects                    | Post Types              |
+| ----------------------------------- | --------------------------------- | --------------------------- | ----------------------- |
+| [MEGA 65](tags/mega-65)             | [6502 Assembly](tags/asm6502)     | [Tetris](tags/tetris)       | [Guides](tags/guide)    |
+| [Commodore 64](tags/commodore-64)   | [45gs02 Assembly](tags/asm45gs02) | [Graphics](tags/graphics)   | [Series](tags/series)   |
+| [Commodore 128](tags/commodore-128) | [68000 Assembly](tags/asm68000)   | [Pixel Art](tags/pixel-art) | [Reviews](tags/reviews) |
+| [Amiga](tags/amiga)                 | [BASIC](tags/basic)               |                             |                         |
+|                                     |                                   |                             |                         |
 
 >[!todo]
 >Bear with me as I am writing and moving content to this site. Over the years I've posted about 8-bit computers on my [Google Blogger](https://devdef.blogspot.com/) website. That content (and from other places) will be moved to this site, at a rate of *when-i-have-time-and-energy*. Also, other sites that carry my content will be moved here.
