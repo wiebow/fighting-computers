@@ -6,7 +6,7 @@ date: 2024-01-27
 ---
 
 
-![[content/images/mini_mii.jpg|150x150]]
+![[mini_mii.jpg|150x150]]
 *Note: 2D representation of the author.*
 
 Wiebo has been involved with microcomputers since the early 80’s explosion. Primarily a Commodore kid, he is still engaged with 8 bits at a time.

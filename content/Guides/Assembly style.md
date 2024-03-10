@@ -26,7 +26,7 @@ In addition, standard patterns translated to assembly can be found in [[Patterns
 ### Comments
 
 * comments explaining a block of code are positioned at the beginning of the line.
-* comments explaining an instruction are positioned after the instruction
+* comments explaining an instruction are positioned after the instruction.
 
 >[!Example]
 >```asm6502

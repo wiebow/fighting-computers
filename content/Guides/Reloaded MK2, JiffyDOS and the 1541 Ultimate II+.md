@@ -1,5 +1,5 @@
 ---
-title: Reloaded MK2, Jiffydos and the 1541 Ultimate II+
+title: Reloaded MK2, JiffyDOS and the 1541 Ultimate II+
 description: In a Jiffy!
 draft: false
 date: 2024-03-10
@@ -7,9 +7,9 @@ tags:
   - 1541-ultimate-2
   - C64-reloaded-mk2
   - hardware
-  - Jiffydos
   - commodore-64
   - guide
+  - JiffyDOS
 ---
 
 > [!NOTE]
@@ -17,9 +17,9 @@ tags:
 
 ## In a Jiffy!
 
-Using the new Reloaded MK2 motherboard for the C64 in combination with the 1541 Ultimate II+ cartridge has made it ridiculously easy to use *Jiffydos* without the fuss of opening up hardware and lifting chips from sockets.  
+Using the new Reloaded MK2 motherboard for the C64 in combination with the 1541 Ultimate II+ cartridge has made it ridiculously easy to use *JiffyDOS* without the fuss of opening up hardware and lifting chips from sockets.  
   
-Jiffydos is great. It speeds up disk operations and adds easier to use commands to work with the disk drive and floppies. Technical details can be found here, and also instructions how to use it: [https://www.c64-wiki.com/wiki/JiffyDOS](https://www.c64-wiki.com/wiki/JiffyDOS).
+JiffyDOS is great. It speeds up disk operations and adds easier to use commands to work with the disk drive and floppies. Technical details can be found here, and also instructions how to use it: [https://www.c64-wiki.com/wiki/JiffyDOS](https://www.c64-wiki.com/wiki/JiffyDOS).
 
 We need two ROM images: the one for the C64 itself, and the ROM that needs to be used in the disk drive.  These can be acquired from various places. Let's set those ROMs to work.  
 
@@ -89,7 +89,7 @@ After performing this action (hold the reset button for at least 5 seconds) you 
 
 ## ROM upload to the 1541 Ultimate II+
 
-Next, we need to set the 1541 Ultimate II+ to use the Jiffydos ROM for its 1541 drive. This is done by first locating the ROM on the USB stick and selecting it.  
+Next, we need to set the 1541 Ultimate II+ to use the JiffyDOS ROM for its 1541 drive. This is done by first locating the ROM on the USB stick and selecting it.  
   
 This will open a menu, allowing you to use it as a drive ROM:
 
@@ -107,7 +107,7 @@ Press `ENTER` and we're done.
 
 ## Result!
 
-We can now use Jiffydos in combination with the 1541 Ultimate II+. Really nice! Fastload without taking a cartridge slot, and handy shortcut commands when using diskettes:
+We can now use JiffyDOS in combination with the 1541 Ultimate II+. Really nice! Fastload without taking a cartridge slot, and handy shortcut commands when using diskettes:
 
 ![[jif6.jpg]]
 
