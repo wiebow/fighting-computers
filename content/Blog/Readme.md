@@ -1,10 +1,10 @@
 ---
 title: Read Me
 description: About the author.
+draft: false
 tags: 
 date: 2024-01-27
 ---
-
 
 ![[mini_mii.jpg|150x150]]
 *Note: 2D representation of the author.*
